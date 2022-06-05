@@ -232,8 +232,6 @@ clear
 system=$(cat /etc/issue.net)
 date=$(date '+%Y-%m-%d <> %H:%M:%S')
 echo -e "\033[1;37m $system                          $date"
-figlet "ALFAINTERNET" | lolcat
-echo "SE VI MAIS LONGE DO QUE OUTROS, FOI POR ESTÁ DE PÉ SOBRE OMBROS DE GIGANTES" 
 echo -e "\n\033[0;34m▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣\033[0m"
         tput setaf 7 ; tput setab 4 ; tput bold ; printf '%55s%s%-12s\n' "EDIT: @ALFAINTERNET1" ; tput sgr0
 echo -e "\n\033[0;34m▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣\033[0m"
@@ -545,7 +543,6 @@ case "$x" in
    ;;
    h)
    cd bashtop/
-   bashtop
    ;;
    g)
    apt install nethogs -y
