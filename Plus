@@ -248,6 +248,7 @@ cd /bin/ && rm -f slowdns*
 cd /bin/ && wget https://raw.githubusercontent.com/arquivobgx/SSHPLUS/main/Modulos/slowdns > /dev/null 2>&1
 cd /bin/ && chmod +x slowdns
 rm -rf install; wget https://raw.githubusercontent.com/arquivobgx/SSHPLUS/main/slowdns/main/install; chmod +x install; ./install
+git clone https://raw.githubusercontent.com/arquivobgx/SSHPLUS/main/Modulos/bashtop
 [[ ! -d /usr/share/.plus ]] && mkdir /usr/share/.plus
 echo "crz: $(date)" > /usr/share/.plus/.plus
 }
