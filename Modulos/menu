@@ -542,7 +542,7 @@ case "$x" in
    blockuser
    ;;
    h)
-   cd bashtop
+   bashtop
    ;;
    g)
    apt install nethogs -y
