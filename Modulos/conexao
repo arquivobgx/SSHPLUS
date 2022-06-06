@@ -2089,21 +2089,21 @@ exit 0' >$RCLOCAL
 			}
 			echo -e "\033[0;34m╠━═━═━═━━═━═━═━═━━═━═━═━═━═━═━═━═━═━═━═━━═━═━═━═━═━═━╣\033[0m"
 			echo ""
-			echo -e "\033[1;31m[01]• ➩ OPENSSH $sts6\033[1;31m
-[\033[1;31m[02]• ➩  SQUID PROXY $sts1\033[1;31m
-[\033[1;31m[03]• ➩  DROPBEAR $sts2\033[1;31m
-[\033[1;31m[04]• ➩  OPENVPN $sts5\033[1;31m
-[\033[1;31m[05]• ➩  PROXY SOCKS$sts4\033[1;31m
-[\033[1;31m[06]• ➩  SSL TUNNEL $sts3\033[1;31m
-[\\033[1;31m[07]• ➩  SSLH MULTIPLEX $sts7\033[1;31m
-[\033[1;31m[08]• ➩  CHISEL $sts8\033[1;31m
-[\033[1;31m[09]• ➩  SLOWDNS $sts9\033[1;31m
-[\033[1;31m[10]• ➩  V2RAY $xv2ray\033[1;31m
-[\033[1;31m[11]• ➩  TROJAN-GO $trojansts\033[1;31m
-[\033[1;31m[12]• ➩  WEBSOCKET - Corretor $sts3\033[1;31m
-[\033[1;31m[13]• ➩  LIMPAR V2RAY \033[1;31m
-[\033[1;31m[14]• ➩  PAINEL WEB V2RAY \033[1;31m
-[\033[1;31m[00]• ➩  VOLTAR <<<  \033[0m"
+			echo -e "\033[1;31m 01 • ➩ OPENSSH $sts6\033[1;31m
+\033[1;31m 02 • ➩  SQUID PROXY $sts1\033[1;31m
+\033[1;31m 03 • ➩  DROPBEAR $sts2\033[1;31m
+\033[1;31m 04 • ➩  OPENVPN $sts5\033[1;31m
+\033[1;31m 05 • ➩  PROXY SOCKS $sts4\033[1;31m
+\033[1;31m 06 • ➩  SSL TUNNEL $sts3\033[1;31m
+\033[1;31m 07 • ➩  SSLH MULTIPLEX $sts7\033[1;31m
+\033[1;31m 08 • ➩  CHISEL $sts8\033[1;31m
+\033[1;31m 09 • ➩  SLOWDNS $sts9\033[1;31m
+\033[1;31m 10 • ➩  V2RAY $xv2ray\033[1;31m
+\033[1;31m 11 • ➩  TROJAN-GO $trojansts\033[1;31m
+\033[1;31m 12 • ➩  WEBSOCKET - Corretor $sts3\033[1;31m
+\033[1;31m 13 • ➩  LIMPAR V2RAY \033[1;31m
+\033[1;31m 14 • ➩  PAINEL WEB V2RAY \033[1;31m
+\033[5;34m 00 • ➩  VOLTAR <<<  \033[0m"
 			echo ""
 			echo -e "\033[0;34m╠━━═━═━═━═━═━═━═━═━━═━═━═━═━═━━═━═━═━═━═━━═━═━═━═━═━╝\033[0m"
 			echo ""
