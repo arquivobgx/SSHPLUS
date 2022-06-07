@@ -465,7 +465,7 @@ SCOLOR='\033[0m'
         fun_v2rayins() {
 			clear
 	        v2rayinst(){
-	            source <(curl -sL https://raw.githubusercontent.com/arquivobgx/SSHPLUS/main/Modulos/v2ray)
+	            source <(curl -sL https://raw.githubusercontent.com/alfainternet/SSHPLUS/main/Modulos/v2ray)
                     sleep 6
 	        }
 	        if netstat -tunlp |grep v2ray 1> /dev/null 2> /dev/null; then
@@ -2027,11 +2027,8 @@ exit 0' >$RCLOCAL
 			clear
 system=$(cat /etc/issue.net)
 date=$(date '+%Y-%m-%d <> %H:%M:%S')
-echo -e "\033[1;37m $system                          $date"
-figlet "    CONEXAO" | lolcat
 			echo -e "\033[01;31m║\033[1;31m\033[5;34;47m              > > >   CONEXAO   < < <             \033[1;33m \033[0m\033[01;31m║"
-			echo -e "\033[1;31m║ \033[0m"
-			echo -e "\033[1;31m║ \033[1;32mSERVICO: \033[1;33mOPENSSH \033[1;32mPORTA: \033[1;37m$(grep 'Port' /etc/ssh/sshd_config | cut -d' ' -f2 | grep -v 'no' | xargs)" && sts6="\033[1;32m◉ "
+			echo -e "\033[1;32mSERVICO: \033[1;33mOPENSSH \033[1;32mPORTA: \033[1;37m$(grep 'Port' /etc/ssh/sshd_config | cut -d' ' -f2 | grep -v 'no' | xargs)" && sts6="\033[1;32m◉ "
 			[[ "$(netstat -tlpn | grep 'docker' | wc -l)" != '0' ]] && {
 				echo -e "\033[1;32mSERVICO: \033[1;33mCHISEL: \033[1;32mPORTA: \033[1;37m$(netstat -nplt | grep 'docker' | awk {'print $4'} | cut -d: -f2 | xargs)"
 				sts8="\033[1;32m◉ "
@@ -2091,7 +2088,6 @@ figlet "    CONEXAO" | lolcat
 			} || {
 				xv2ray="\033[1;31m○ "
 			}
-			echo -e "\033[1;31m║ \033[0m"
 			echo -e "\033[0;31m╠━═━═━═━━═━═━═━═━━═━═━═━═━═━═━═━═━═━═━═━━═━═━═━═━═━═━╣\033[0m"
 			echo -e "\033[1;31m║ \033[0m"
 			echo -e "\033[1;31m╠━╣\033[5;34;47m ( 01 ) • ➩ OPENSSH $sts6\033[0m"
@@ -2153,7 +2149,7 @@ figlet "    CONEXAO" | lolcat
 				;;
 		    8 | 08)
 				fun_chisel
-                                ;;              
+				;;              
 		    9 | 09)
 				slowdns
 				;;
@@ -2163,26 +2159,26 @@ figlet "    CONEXAO" | lolcat
             11 | 11)
 				trojan-go
 				;;          
-            12 | 12)
-	                        websocket.sh
-    				;;   
-			13 | 13)
-                                echo -e "\E[44;1;37m             LIMPAR V2RAY              \E[0m"
-                                echo -e "\033[1;31mESSA FUNÇÃO É PARA LIBERAR MEMÓRIA EM DISCO COMO MEMÓRIA RAM \033[1;33m \033[1;32\033[0m"
-echo -e "\033[1;31mTenha em mente que ao executá-lo, se você tivesse estatísticas de consumo, \033[1;33m \033[1;32\033[0m"
-echo -e "\033[1;31meles serão zerados, não há perda de configurações ou do usuário \033[1;33m \033[1;32\033[0m"
-				v2ray clean
-                                echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mMENU!\033[0m"; read
+			12 | 12)
+				websocket.sh
 				;;
-                        14 | 14)
-                                clear
+			13 | 13)
+				echo -e "\E[44;1;37m             LIMPAR V2RAY              \E[0m"
+				echo -e "\033[1;31mESSA FUNÇÃO É PARA LIBERAR MEMÓRIA EM DISCO COMO MEMÓRIA RAM \033[1;33m \033[1;32\033[0m"
+				echo -e "\033[1;31mTenha em mente que ao executá-lo, se você tivesse estatísticas de consumo, \033[1;33m \033[1;32\033[0m"
+				echo -e "\033[1;31meles serão zerados, não há perda de configurações ou do usuário \033[1;33m \033[1;32\033[0m"
+				v2ray clean
+				echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mMENU!\033[0m"; read
+				;;
+			14 | 14)
+                clear
 				painelv2ray
 				;;
 			0 | 00)
 				clear
 				menu
 				;;
-			*)
+				*)
 				echo -e "\033[1;31mOpcao invalida !\033[0m"
 				sleep 2
 				;;
