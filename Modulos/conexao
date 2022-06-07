@@ -2025,7 +2025,7 @@ exit 0' >$RCLOCAL
 		while true $x != "ok"; do
 			[[ ! -e '/home/sshplus' ]] && exit 0
 			clear
-			echo -e "\033[01;31m║\033[1;31m\033[5;34;47m              > > >   CONEXAO   < < <             \033[01;31m║\033[0m"
+			echo -e "\E[44;1;37m                MODO DE CONEXAO                 \E[0m\n"
 			echo -e "\033[1;32mSERVICO: \033[1;33mOPENSSH \033[1;32mPORTA: \033[1;37m$(grep 'Port' /etc/ssh/sshd_config | cut -d' ' -f2 | grep -v 'no' | xargs)" && sts6="\033[1;32m◉ "
 			[[ "$(netstat -tlpn | grep 'docker' | wc -l)" != '0' ]] && {
 				echo -e "\033[1;32mSERVICO: \033[1;33mCHISEL: \033[1;32mPORTA: \033[1;37m$(netstat -nplt | grep 'docker' | awk {'print $4'} | cut -d: -f2 | xargs)"
@@ -2033,11 +2033,11 @@ exit 0' >$RCLOCAL
 			} || {
 				sts8="\033[1;31m○ "
 			}
-			[[ "$(ps x | grep 'slow_dns' | grep -v 'grep'|wc -l)" != '0' ]] && {
+			[[ "$(ps x | grep 'slowdns' | grep -v 'grep' | wc -l)" != '0' ]] && {
 				sts9="\033[1;32m◉ "
 			} || {
 				sts9="\033[1;31m○ "
-			}            
+			}
 			[[ "$(netstat -tlpn | grep 'sslh' | wc -l)" != '0' ]] && {
 				echo -e "\033[1;32mSERVICO: \033[1;33mSSLH: \033[1;32mPORTA: \033[1;37m$(netstat -nplt | grep 'sslh' | awk {'print $4'} | cut -d: -f2 | xargs)"
 				sts7="\033[1;32m◉ "
@@ -2065,7 +2065,7 @@ exit 0' >$RCLOCAL
 				sts3="\033[1;31m○ "
 			}
 			[[ "$(netstat -tlpn | grep 'dropbear' | wc -l)" != '0' ]] && {
-				echo -e "\033[1;32m  SERVICO: \033[1;33mDROPBEAR \033[1;32mPORTA: \033[1;37m$(netstat -nplt | grep 'dropbear' | awk -F ":" {'print $4'} | xargs)"
+				echo -e "\033[1;32mSERVICO: \033[1;33mDROPBEAR \033[1;32mPORTA: \033[1;37m$(netstat -nplt | grep 'dropbear' | awk -F ":" {'print $4'} | xargs)"
 				sts2="\033[1;32m◉ "
 			} || {
 				sts2="\033[1;31m○ "
@@ -2087,8 +2087,7 @@ exit 0' >$RCLOCAL
 				xv2ray="\033[1;31m○ "
 			}
 			echo -e "\033[0;31m╠━═━═━═━━═━═━═━═━━═━═━═━═━═━═━═━═━═━═━═━━═━═━═━═━═━═━╣\033[0m"
-			echo -e "\033[1;31m║ \033[0m"
-			echo -e "[\033[1;36m02\033[1;31m] \033[1;37m• \033[1;33mOPENSSH ◉ \033[1;31m
+			echo -e "\033[1;31m[\033[1;36m01\033[1;31m] \033[1;37m• \033[1;33mOPENSSH $sts6\033[1;31m
 [\033[1;36m02\033[1;31m] \033[1;37m• \033[1;33mSQUID PROXY $sts1\033[1;31m
 [\033[1;36m03\033[1;31m] \033[1;37m• \033[1;33mDROPBEAR $sts2\033[1;31m
 [\033[1;36m04\033[1;31m] \033[1;37m• \033[1;33mOPENVPN $sts5\033[1;31m
