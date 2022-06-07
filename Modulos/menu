@@ -232,6 +232,8 @@ clear
 system=$(cat /etc/issue.net)
 date=$(date '+%Y-%m-%d <> %H:%M:%S')
 echo -e "\033[1;37m $system                          $date"
+figlet "ALFAINTERNET" | lolcat
+echo "SE VI MAIS LONGE DO QUE OUTROS, FOI POR ESTÁ DE PÉ SOBRE OMBROS DE GIGANTES" 
 echo -e "\n\033[0;34m▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣\033[0m"
         tput setaf 7 ; tput setab 4 ; tput bold ; printf '%55s%s%-12s\n' "EDIT: @ALFAINTERNET1" ; tput sgr0
 echo -e "\n\033[0;34m▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣\033[0m"
@@ -433,7 +435,7 @@ echo -e "\033[1;34m[\033[1;37m04 •\033[1;34m]\033[1;37m ➩ \033[1;33mMONITOR 
 echo -e "\033[1;34m[\033[1;37m05 •\033[1;34m]\033[1;37m ➩ \033[1;33mALTERAR DATA \033[0;32m                     | \033[1;34m[\033[1;37mE •\033[1;34m]\033[1;37m ➩ \033[1;33mNETFLIX - DNS \033[0;32m"
 echo -e "\033[1;34m[\033[1;37m06 •\033[1;34m]\033[1;37m ➩ \033[1;33mALTERAR LIMITE \033[0;32m                   | \033[1;34m[\033[1;37mF •\033[1;34m]\033[1;37m ➩ \033[1;33mBLOQUEAR USUÁRIOS\033[0;32m"
 echo -e "\033[1;34m[\033[1;37m07 •\033[1;34m]\033[1;37m ➩ \033[1;33mALTERAR SENHA \033[0;32m                    | \033[1;34m[\033[1;37mG •\033[1;34m]\033[1;37m ➩ \033[1;33mMONITOR TRÁFEGO \033[0;32m"
-echo -e "\033[1;34m[\033[1;37m08 •\033[1;34m]\033[1;37m ➩ \033[1;33mREMOVER VENCIDOS \033[0;32m                 | \033[1;34m[\033[1;37mH •\033[1;34m]\033[1;37m ➩ \033[1;33mMENU BASHTOP\033[0;32m"
+echo -e "\033[1;34m[\033[1;37m08 •\033[1;34m]\033[1;37m ➩ \033[1;33mREMOVER VENCIDOS \033[0;32m                 | \033[1;34m[\033[1;37mH •\033[1;34m]\033[1;37m ➩ \033[1;33mMENU BASHTOP 1\033[0;32m"
 echo -e "\033[1;34m[\033[1;37m09 •\033[1;34m]\033[1;37m ➩ \033[1;33mRELATORIO DE USUÁRIO \033[0;32m             | \033[1;34m[\033[1;37mI •\033[1;34m]\033[1;37m ➩ \033[1;33mTUNING \033[0;32m"
 echo -e "\033[1;34m[\033[1;37m10 •\033[1;34m]\033[1;37m ➩ \033[1;33mCONEXÕES \033[0;32m"
 echo -e "\033[1;34m[\033[1;37m11 •\033[1;34m]\033[1;37m ➩ \033[1;33mSPEED TESTE \033[0;32m"
