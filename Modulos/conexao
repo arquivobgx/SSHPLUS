@@ -2025,9 +2025,9 @@ exit 0' >$RCLOCAL
 		while true $x != "ok"; do
 			[[ ! -e '/home/sshplus' ]] && exit 0
 			clear
-			echo -e "\033[01;31m║\033[1;31m\033[5;34;47m                      CONEXAO                     \033[1;33m \033[0m\033[01;31m║"
-			
-			echo -e "\033[1;32mSERVICO: \033[1;33mOPENSSH \033[1;32mPORTA: \033[1;37m$(grep 'Port' /etc/ssh/sshd_config | cut -d' ' -f2 | grep -v 'no' | xargs)" && sts6="\033[1;32m◉ "
+			echo -e "\033[01;31m║\033[1;31m\033[5;34;47m              > > >   CONEXAO   < < <             \033[1;33m \033[0m\033[01;31m║"
+			echo ""
+			echo -e "\033[1;31m║ \033[1;32mSERVICO: \033[1;33mOPENSSH \033[1;32mPORTA: \033[1;37m$(grep 'Port' /etc/ssh/sshd_config | cut -d' ' -f2 | grep -v 'no' | xargs)" && sts6="\033[1;32m◉ "
 			[[ "$(netstat -tlpn | grep 'docker' | wc -l)" != '0' ]] && {
 				echo -e "\033[1;32mSERVICO: \033[1;33mCHISEL: \033[1;32mPORTA: \033[1;37m$(netstat -nplt | grep 'docker' | awk {'print $4'} | cut -d: -f2 | xargs)"
 				sts8="\033[1;32m◉ "
@@ -2072,7 +2072,7 @@ exit 0' >$RCLOCAL
 				sts2="\033[1;31m○ "
 			}
 			[[ "$(netstat -tlpn | grep 'squid' | wc -l)" != '0' ]] && {
-				echo -e "\033[1;31m║ \033[1;32mSERVICO: \033[1;33mSQUID \033[1;32mPORTA: \033[1;37m$(netstat -nplt | grep 'squid' | awk -F ":" {'print $4'} | xargs)"
+				echo -e "\033[1;32mSERVICO: \033[1;33mSQUID \033[1;32mPORTA: \033[1;37m$(netstat -nplt | grep 'squid' | awk -F ":" {'print $4'} | xargs)"
 				sts1="\033[1;32m◉ "
 			} || {
 				sts1="\033[1;31m○ "
@@ -2105,7 +2105,7 @@ exit 0' >$RCLOCAL
 			echo -e "\033[1;31m║ \033[0m"
 			echo -e "\033[1;31m╠━╣\033[5;34;47m ( 08 ) • ➩  CHISEL $sts8\033[0m"
 			echo -e "\033[1;31m║ \033[0m"
-			echo -e "\033[1;31m╠━╣\033[5;34m ( 09 ) • ➩  SLOWDNS $sts9\033[0m"
+			echo -e "\033[1;31m╠━╣\033[5;34;47m ( 09 ) • ➩  SLOWDNS $sts9\033[0m"
 			echo -e "\033[1;31m║ \033[0m"
 			echo -e "\033[1;31m╠━╣\033[5;34;47m ( 10 ) • ➩  V2RAY $xv2ray\033[0m"
 			echo -e "\033[1;31m║ \033[0m"
